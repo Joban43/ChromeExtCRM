@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Azure File Downloader</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      padding: 20px;
+      width: 300px;
+      text-align: center;
+    }
+    h1 {
+      font-size: 18px;
+      color: #333;
+      margin-bottom: 10px;
+    }
+    .description {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 20px;
+    }
+    .input-container {
+      margin-bottom: 20px;
+    }
+    .url-input {
+      width: 80%;
+      padding: 8px;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .action-button {
+      padding: 10px 15px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .action-button:hover {
+      background-color: #0056b3;
+    }
+    .icon {
+      width: 30px;
+      height: 30px;
+      margin: 5px;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+  <h1>Azure File Downloader</h1>
+  <p class="description">Detect and download files directly from .azure.txt links.</p>
+  <p> Default URL it detects from is crm.genetec.com</p>
+
+  <div class="input-container">
+    <input type="text" id="url-input" class="url-input" placeholder="Enter custom URL" />
+  </div>
+
+  <button class="action-button" id="save-url">Save URL</button>
+
+  <div class="icon-container">
+    <img src="https://img.icons8.com/ios/50/000000/download.png" alt="download" class="icon" />
+    <img src="https://img.icons8.com/ios/50/000000/link.png" alt="link" class="icon" />
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>

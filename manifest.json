@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "CRM File Downloader",
+    "version": "1.0",
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": "img/icon.png"
+      },
+    "description": "Intercepts .azure.txt files and downloads the actual file from the URL inside.",
+    "permissions": ["downloads", "webRequest", "webNavigation", "storage"],
+    "host_permissions": ["*://crm.genetec.com/*"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "icons": {
+        "16": "img/icon.png",
+        "48": "img/icon.png",
+        "128": "img/icon.png"
+      }
+  }
+  
+  
